@@ -60,8 +60,19 @@ The final output is rescaled to a [0–10] scale across all variables.
 Thematic dimensions (e.g., Health, Education, Environment) are defined via the `Metadata` sheet. Each dimension receives a user-adjustable weight.
 
 **Formula:**
-- Dimension Score = mean(normalized indicators)
-- Vulnerability Index = Σ (Weight_i × DimensionScore_i)
+
+- Dimension Score (Mean of Normalized Indicators):
+
+$$
+\text{Dimension Score} = \frac{1}{n}\sum_{j=1}^{n} \text{Normalized Indicator}_j
+$$
+
+- Vulnerability Index (Weighted Sum of Dimension Scores):
+
+$$
+\text{Vulnerability Index} = \sum_{i=1}^{m} \left(\text{Weight}_i \times \text{Dimension Score}_i\right)
+$$
+
 
 ## Install Dependencies
 
