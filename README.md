@@ -15,6 +15,19 @@ This repository hosts the **Vulnerability Index Dashboard**, a replicable, flexi
 - 📊 **Interactive visualizations** for exploration
 - 🔁 **Easily replicable** for any country with relevant data
 
+- **Use Colombia Data**
+  - **What it does:** Loads the app with pre-cleaned, ready-to-use Colombia data files (`data/colombia_data.xlsx` and `data/colombia_shapefile.zip`), so you can explore the dashboard without manual uploads.
+  - **How it works:** Clicking the button sets `input$use_colombia > 0`, which bypasses the file-upload inputs and automatically loads the default Colombia datasets and metadata.
+
+- **Interactive Mapping**
+  - Leaflet map with selectable base layers, pop-ups and color legend
+
+- **Data Tables**
+  - View and download: Processed Data, Transformed Data, Index Scores, Shapefile Attributes
+
+- **Vulnerability Analysis**
+  - Pareto scatter plot and map to highlight the most vulnerable subregions based on your threshold
+
 Originally built as a **case study for Colombia**, this dashboard can be adapted for any geography.
 
 ## 📌 Key Functionalities
